@@ -5,30 +5,47 @@ body {
 
 input {
     width: 75%;
-    height: 17px;
+    height: 20px;
     padding: 8px;
     font-size: 1rem;
     border-radius: 12px;
     border: 0;
-    margin: 10px;
+    margin: 15px;
+}
+input:focus {
+    outline: 0;
+    box-shadow: inset 0px 0px 15px -5px #000;
+    width: 76%;
+}
+
+object {
+    filter: drop-shadow( 0 0 10px rgb(0 0 0 / 0.3));
 }
 
 button {
-    background-color: #1D0C20; 
+    background-image: linear-gradient(to top right, #1D0C20, #3a243f); 
     width: 75%;
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 10px;
     border: 0;
 
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 0.3);
+
     color: white;
     font-size: 1.2rem;
 }
+button:hover {
+    background-image: linear-gradient(to bottom left, #1D0C20, #3a243f, #1D0C20);
+    cursor: pointer;
+    color: #FECD23;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 0.5);
+}
 
 .container {
-    background-color: #1D0C20;
+    background-image: linear-gradient(#1D0C20, #651F71);
     margin: auto;
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0;
     border-radius: 10px;
 
     width: 680px;
@@ -43,6 +60,7 @@ button {
     color: #FECD23;
     font-size: 2.1rem;
     font-weight: 600;
+    text-shadow: 0px 0px 7px #FECD23;
 }
 .content {
     font-size: 1rem;
@@ -51,15 +69,15 @@ button {
 }
 
 .forms {
-    background-color: #651F71;
-    border-radius: 10px;
-    margin-top: 15px;
+    background-image: linear-gradient(#651F71, #1D0C20);
+    border-radius: 25px;
+    margin-top: 10px;
 
     font-size: 1.6rem;
     font-weight: 500;
     letter-spacing: 0;
 }
-.form-request {
+.form-content {
     padding: .9rem;
 }
 
@@ -69,15 +87,33 @@ button {
     justify-content: space-around;
     width: 100%;
 }
-.card {
-    background-color: #5896F6;
-    border: 10px solid blue;
+.gradient-border {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#2637DB, #342988);
+    padding: 10px;
+    width: 100%;
     border-radius: 25px;
     margin: 20px;
-
-  
-
+}
+.gradient-border:hover {
+    background: linear-gradient(30deg, #342988, #2637DB, #342988);
+    box-shadow: 0 0 15px #2637DB;
+}
+.card {
+    background-image: linear-gradient(200deg, #3B5AEE, #74D0FF);
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 20px -5px #000;
+}
+.card:hover {
+    background-image: linear-gradient(#3B5AEE, #74D0FF);
+    box-shadow: inset 0px 0px 25px -10px #000;
 }
 .card-title {
     margin-top: 20px;
+}
+
+.footer {
+    font-size: .9rem;
+    padding: 10px;
 }
