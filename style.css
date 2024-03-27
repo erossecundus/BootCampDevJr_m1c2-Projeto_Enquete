@@ -91,8 +91,8 @@ button:hover {
     display: flex;
     align-items: center;
     background: linear-gradient(#2637DB, #342988);
-    padding: 10px;
-    width: 100%;
+    padding: .8rem;
+    width: 30%;
     border-radius: 25px;
     margin: 20px;
 }
@@ -117,3 +117,27 @@ button:hover {
     font-size: .9rem;
     padding: 10px;
 }
+
+@media screen and (max-width: 700px){
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gradient-border {
+        flex-direction: column;
+        width: auto;
+    }
+
+
+}
+
